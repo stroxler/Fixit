@@ -25,7 +25,6 @@ venv: .venv
 
 test:
 	python -m $(PKG).tests
-	python -m mypy -p $(PKG)
 	pyrefly check -c pyproject.toml
 
 lint:
